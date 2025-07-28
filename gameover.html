@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Over</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f44336;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .gameover-container {
+      background: white;
+      color: black;
+      display: inline-block;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="gameover-container">
+    <h1>Game Over 😢</h1>
+    <p>The correct word was: <span id="correct-word"></span></p>
+    <p>Your Score: <span id="final-score"></span></p>
+    <a href="indexdoanchu.html">Play Again</a>
+  </div>
+  <script>
+    document.getElementById("correct-word").textContent = localStorage.getItem("lastWord") || "";
+    document.getElementById("final-score").textContent = localStorage.getItem("score") || "0";
+    let score = parseInt(localStorage.getItem("score")) || 0;
+    <a href="indexdoanchu.html"/>
+  </script>
+
+
+<script>
+  function playAgain() {
+    // Reset dữ liệu
+    localStorage.removeItem("lastWord");
+    localStorage.setItem("score", "0");
+    
+    // Chuyển trang đúng cách
+    window.location.href = "indexdoanchu.html";
+  }
+</script>
+
+</body>
+</html>

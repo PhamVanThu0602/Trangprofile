@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Liên hệ với tôi</title>
+  <link rel="stylesheet" href="stylelienhe.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <section class="contact-section">
+    <div class="profile" data-aos="fade-right">
+      <img src="images/avt.jpg" alt="Avatar">
+      <h2>Pham Van Thu</h2>
+      <p>Web Developer | Game Designer</p>
+      <h2 class="typing-text"></h2>
+
+      <ul class="info">
+        <li><strong>Email:</strong> phamvanthu0602@gmail.com</li>
+        <li><strong>Phone:</strong> 0903325995</li>
+        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/thu.pham.45927?locale=vi_VN">Thu Pham</a></li>
+        <li><strong>Address:</strong> Ho Chi Minh City</li>
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contactForm" data-aos="fade-left">
+      <h3>Send message</h3>
+      <input type="text" id="name" placeholder="Your name" required>
+      <input type="email" id="email" placeholder="Your email" required>
+      <textarea id="message" placeholder="Your message..." required></textarea>
+      <button type="submit">Gửi</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="scriptlienhe.js"></script>
+  <script>AOS.init();</script>
+
+
+  <div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50 },
+      color: { value: "#ffffff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "grab" }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

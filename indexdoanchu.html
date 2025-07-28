@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the Word</title>
+  <link rel="stylesheet" href="styledoanchu.css">
+</head>
+<body>
+  <div id="start-screen" style="text-align: center; padding: 50px;">
+    <h1>🎮 English word guessing game</h1>
+    <p>Click the button below to start playing!</p>
+    <button onclick="startGame()" style="padding: 10px 20px; font-size: 18px;">Start playing</button>
+  </div>
+
+  <div class="container" style="display: none;">
+    <h1>Guess the Word 🎯</h1>
+    <p id="score">Score: <span id="point">0</span></p>
+    <p>Time Left: <span id="time">30</span>s</p>
+    <div id="image"></div>
+    <div id="word-display"></div>
+    <p id="hint">Hint: <span id="hint-text"></span></p>
+    <div id="letter-buttons"></div>
+    <p id="message"></p>
+  </div>
+  <script src="scriptdoanchu.js"></script>
+
+
+<script>
+  document.getElementById("correct-word").textContent = localStorage.getItem("lastWord") || "";
+  document.getElementById("final-score").textContent = localStorage.getItem("score") || "0";
+
+  function resetGame() {
+    localStorage.removeItem("lastWord");
+    localStorage.setItem("score", "0");
+  }
+</script>
+
+</body>
+</html>

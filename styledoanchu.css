@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#image img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+#word-display {
+  font-size: 24px;
+  margin: 20px 0;
+  letter-spacing: 10px;
+}
+
+#letter-buttons button {
+  margin: 5px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #90caf9;
+  cursor: pointer;
+}
+
+#letter-buttons button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+#hint {
+  display: none;
+  font-style: italic;
+  color: #333;
+}
+
+#message {
+  font-weight: bold;
+  margin-top: 10px;
+  color: green;
+}
+
+
+#letter-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.keyboard-row button {
+  margin: 3px;
+}
+
+
+#start-screen {
+  text-align: center;
+  margin-top: 80px;
+}
+
+#start-screen h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+#start-screen p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+#start-btn {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+#start-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
