@@ -39,7 +39,7 @@ const questions = [
   },
   {
     word: "train",
-    image: "images/train.jpg",
+    image: "images/train.png",
     hint: "A long vehicle that runs on tracks."
   },
   {
